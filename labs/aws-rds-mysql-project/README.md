@@ -18,7 +18,7 @@ El entorno en la nube se compuso de los siguientes elementos técnicos:
 
 ## 3. Fases de Implementación
 
-###Fase 1: Creación de la Instancia RDS
+**Fase 1: Creación de la Instancia RDS**
 
 Se configuró una instancia de base de datos MySQL bajo el esquema de capa gratuita con las siguientes especificaciones:
 * Clase de instancia: db.t2.micro / db.t3.micro.
@@ -30,7 +30,7 @@ Se configuró una instancia de base de datos MySQL bajo el esquema de capa gratu
 
 ![Estado de la instancia RDS](images/imagen1.png)
 
-###Fase 2: Conexión y Configuración del Cliente
+**Fase 2: Conexión y Configuración del Cliente**
 
 Se accedió al servidor Linux mediante SSH para instalar las herramientas necesarias:
 
@@ -46,7 +46,7 @@ La conexión al endpoint de RDS se realizó mediante el comando: mysql -h <endpo
 ![Seguridad y Puertos](images/imagen2.png)
 
 
-### Fase 3: Manipulación de Datos (SQL)
+**Fase 3: Manipulación de Datos (SQL)**
 
 Se diseñó un esquema de base de datos relacional compuesto por dos tablas vinculadas:
 1. Tabla RESTART: Almacena información de estudiantes (ID, nombre, ciudad y fecha de graduación).
@@ -56,7 +56,7 @@ Se diseñó un esquema de base de datos relacional compuesto por dos tablas vinc
 
 ![Conexión SQL Exitosa](images/imagen3.png)
 
-### Fase 4: Operaciones Avanzadas (Inner Join)
+**Fase 4: Operaciones Avanzadas (Inner Join)**
 
 Para obtener una vista consolidada de los estudiantes que completaron su certificación, se ejecutó una consulta de unión:
 
