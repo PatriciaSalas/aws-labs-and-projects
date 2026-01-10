@@ -22,7 +22,7 @@ Para este proyecto se aplicaron políticas específicas que garantizan un contro
 ##  Guía de Implementación Paso a Paso
 
 ### Fase 1: Control de Identidades (IAM)
-* **Creación de Usuario:** Se creó el usuario `soporte-ti` con acceso limitado a la consola.
+* **Creación de Usuario:** Se creó el usuario `it-support` con acceso limitado a la consola.
 * **Seguridad:** Se activó el **MFA (Multi-Factor Authentication)** para proteger la cuenta contra accesos no autorizados.
 
 > **Capturas Relacionadas:**
@@ -36,8 +36,8 @@ Para este proyecto se aplicaron políticas específicas que garantizan un contro
 > **Capturas Relacionadas:**
 > - ![Detalle VPC](images/imagen3.png)
 > - ![Configuración Subnet](images/imagen4.png)
-> - ![Internet Gateway](images/imagen5png)
-> - ![Tabla de Rutas](/images/imagen6.png)
+> - ![Internet Gateway](images/imagen5.png)
+> - ![Tabla de Rutas](images/imagen6.png)
 
 ### Fase 3: Rol de Instancia y Despliegue de EC2
 * Se creó un **Rol IAM** (`it-support-ssm-role`) que permite a la EC2 actuar bajo la política de Systems Manager.
